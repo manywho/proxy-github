@@ -11,7 +11,7 @@ proxy.on('proxyReq', function (proxyRequest) {
 
 const server = http.createServer(function (req, res) {
     // Ensure the URL is in our whitelist,
-    if (/\/repos\/manywho\/(.*)\/pulls(.*)$/.test(req.url)) {
+    if (/\/repos\/(.*)\/(.*)\/pulls(.*)$/.test(req.url)) {
         proxy.web(req, res, {
             target: 'https://api.github.com'
         });

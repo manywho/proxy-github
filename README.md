@@ -6,7 +6,7 @@ without the application having access to a highly-privileged API token.
 
 It currently allows access to:
 
-* `/repos/manywho/*/pulls`
+* `/repos/*/*/pulls`
 
 ## Running
 
